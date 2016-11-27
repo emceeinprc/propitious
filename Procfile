@@ -1,1 +1,1 @@
-web: gunicorn propitious.wsgi --log-file -
+web: gunicorn my_admin.wsgi --log-file -
