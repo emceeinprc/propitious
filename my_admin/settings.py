@@ -25,12 +25,14 @@ SECRET_KEY = '=17!v)v$^g7^@c=b&+#pw#kuyyzmxst=)&13=c^cmz!7%@*g$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['propitious.herokuapp.com']
+ALLOWED_HOSTS = ['propitious.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'items.apps.ItemsConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
